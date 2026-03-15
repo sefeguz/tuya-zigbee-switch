@@ -1,12 +1,12 @@
 [
   {
-    "fileName": "tlc_switch-1.1.2-3a609a90-forced.zigbee",
+    "fileName": "tlc_switch-1.1.2-d42f64a8-forced.zigbee",
     "fileVersion": 4294967295,
-    "fileSize": 178818,
-    "url": "https://github.com/sefeguz/tuya-zigbee-switch/raw/42aa63d279458167e3c7fcf8c5597d1efca2189d/bin/router/MODULE_YBJQJSUZ_TS0003/tlc_switch-1.1.2-3a609a90-forced.zigbee",
+    "fileSize": 178850,
+    "url": "https://github.com/sefeguz/tuya-zigbee-switch/raw/refs/heads/main/bin/router/MODULE_YBJQJSUZ_TS0003/tlc_switch-1.1.2-d42f64a8-forced.zigbee",
     "imageType": 47001,
     "manufacturerCode": 4417,
-    "sha512": "8cda8045bf65a392cc05dbad926bb4ea682b0a0ee99f0353115143303655c0440c75caec3a254866504183aa6e6c1b5d72cb80810a846685cf48dedf44d16bfa",
+    "sha512": "177b7f26aeca019dabbf117d3ba85128f6e0a901dce5cebb98d5045396438bbee7700e69e5dfcdf66e73a8eaa1b47186987d09bea13b70b54f241941a57b66bb",
     "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
     "manufacturerName": [
       "_TZ3000_ybjqjsuz",
