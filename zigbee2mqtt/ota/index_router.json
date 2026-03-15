@@ -1,12 +1,12 @@
 [
   {
-    "fileName": "tlc_switch-1.1.2-d42f64a8.zigbee",
+    "fileName": "tlc_switch-1.1.2-128bb3a3.zigbee",
     "fileVersion": 285356032,
-    "fileSize": 178850,
-    "url": "https://github.com/sefeguz/tuya-zigbee-switch/raw/32750532556f35cb672ebbd4c445aa2a9409399e/bin/router/MODULE_YBJQJSUZ_TS0003/tlc_switch-1.1.2-d42f64a8.zigbee",
+    "fileSize": 178834,
+    "url": "https://github.com/sefeguz/tuya-zigbee-switch/raw/refs/heads/main/bin/router/MODULE_YBJQJSUZ_TS0003/tlc_switch-1.1.2-128bb3a3.zigbee",
     "imageType": 47001,
     "manufacturerCode": 4417,
-    "sha512": "2976712bec5fc3f2460ef0f7e50baf23832ed814e0425dea950d1b3c1dc5557ff8c1b30657a67c7537d5df4b15c2bd22589ea2e884e8488b9c64f15c607cb7b2",
+    "sha512": "6a46420ae2c355b660eb2c4c455a284ebe26a5d943736661c0ac57890940ca2b6477ab4246675e4d94dba3617bff6bf1b0fb251e16503f5d074234babb4e062b",
     "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
     "manufacturerName": [
       "_TZ3000_ybjqjsuz",
@@ -15,13 +15,13 @@
     ]
   },
   {
-    "fileName": "tlc_switch-1.1.2-d42f64a8-from_tuya.zigbee",
+    "fileName": "tlc_switch-1.1.2-128bb3a3-from_tuya.zigbee",
     "fileVersion": 4294967295,
-    "fileSize": 178850,
-    "url": "https://github.com/sefeguz/tuya-zigbee-switch/raw/32750532556f35cb672ebbd4c445aa2a9409399e/bin/router/MODULE_YBJQJSUZ_TS0003/tlc_switch-1.1.2-d42f64a8-from_tuya.zigbee",
+    "fileSize": 178834,
+    "url": "https://github.com/sefeguz/tuya-zigbee-switch/raw/refs/heads/main/bin/router/MODULE_YBJQJSUZ_TS0003/tlc_switch-1.1.2-128bb3a3-from_tuya.zigbee",
     "imageType": 54179,
     "manufacturerCode": 4417,
-    "sha512": "04916b6822e7db35c49c8ea5e374f54bdfb67ac3f9b2ee9a0089382157391a9cde0968d657b6d43b34428c7952be7c5255a7944f15b68d93aceed1353949e3aa",
+    "sha512": "699480fc11cdd84fcf0de9ec1f2645e0d06eea933794689a968ed23730cfc38841b2593a90ac5a3a2a9e239b6b9cdba2ef33925bb238823096bcd9bc7bea0d49",
     "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
     "manufacturerName": [
       "_TZ3000_ybjqjsuz",
