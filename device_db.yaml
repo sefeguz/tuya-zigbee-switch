@@ -15,7 +15,7 @@ MODULE_YBJQJSUZ_TS0003:
   tuya_module: ZTU
   mcu_family: Telink
   mcu: TLSR8258
-  config_str: ybjqjsuz;YBJ;BB6u;LA0;SB6u;RB4;IA1i;SC0u;RD2;IC4i;SD3u;RC3;ID4i;SB7u;RB5;
+  config_str: ybjqjsuz;TS0003-YBJ;BB6u;LA0;SB6u;RB4;IA1i;SC0u;RD2;IC4i;SD3u;RC3;ID4i;SB7u;RB5;
   alt_config_str: null
   old_manufacturer_names:
   - _TZ3000_nPGIPl5D
