@@ -332,7 +332,7 @@ const romasku = {
 const definitions = [
     {
         zigbeeModel: [
-            "YBJ",
+            "TS0003-YBJ",
         ],
         model: "TS0003_switch_module_2",
         vendor: "Tuya-custom",

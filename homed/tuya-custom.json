@@ -3,7 +3,7 @@
     {
       "description": "Custom switch (https://github.com/romasku/tuya-zigbee-switch)",
       "modelNames": [
-        "YBJ"
+        "TS0003-YBJ"
       ],
       "options": {
         "endpointName": {
@@ -20,7 +20,7 @@
     },
     {
       "modelNames": [
-        "YBJ"
+        "TS0003-YBJ"
       ],
       "exposes": [
         "multiPressResetCount",
@@ -56,7 +56,7 @@
     },
     {
       "modelNames": [
-        "YBJ"
+        "TS0003-YBJ"
       ],
       "properties": [
         "status",
@@ -95,7 +95,7 @@
     },
     {
       "modelNames": [
-        "YBJ"
+        "TS0003-YBJ"
       ],
       "exposes": [
         "pressAction",
@@ -244,7 +244,7 @@
     },
     {
       "modelNames": [
-        "YBJ"
+        "TS0003-YBJ"
       ],
       "exposes": [
         "relayIndicatorMode",
