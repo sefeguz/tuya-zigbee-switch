@@ -33,6 +33,9 @@ void hal_gpio_init(hal_gpio_pin_t gpio_pin, uint8_t is_input,
                    hal_gpio_pull_t pull) {
     GPIO_PinTypeDef telink_pin = (GPIO_PinTypeDef)gpio_pin;
 
+    // Ensure pin is set as GPIO function (not analog)
+    gpio_set_func(telink_pin, AS_GPIO);
+
     if (is_input) {
         gpio_set_input_en(telink_pin, 1);
         gpio_set_output_en(telink_pin, 0);
