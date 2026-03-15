@@ -39,10 +39,7 @@ void process_device_type_change() {
     }
 }
 
-extern void hal_gpio_debug_pb5(void);
-
 void app_init(void) {
-    hal_gpio_debug_pb5(); // TEST: blink PB5 3 times at boot
     handle_version_changes();
     parse_config(); // Does most of the setup, including all callbacks
                     // registration

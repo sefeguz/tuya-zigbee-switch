@@ -29,57 +29,6 @@ static GPIO_PullTypeDef hal_to_telink_pull(hal_gpio_pull_t pull) {
     }
 }
 
-// Diagnostic: blink each unknown pin for 10 seconds at boot
-// Sequence: B5, B7, B1, C1, C2, D7, A2
-// Watch green LED - note which pin number (1-7) makes it blink
-static void blink_pin(GPIO_PinTypeDef pin, int seconds) {
-    gpio_set_func(pin, AS_GPIO);
-    gpio_set_output_en(pin, 1);
-    gpio_set_input_en(pin, 0);
-    gpio_setup_up_down_resistor(pin, PM_PIN_UP_DOWN_FLOAT);
-
-    // Blink for N seconds (500ms on / 500ms off)
-    for(int i = 0; i < seconds; i++) {
-        gpio_write(pin, 0); // LOW
-        for(volatile u32 d = 0; d < 4000000; d++) {}
-        gpio_write(pin, 1); // HIGH
-        for(volatile u32 d = 0; d < 4000000; d++) {}
-    }
-    gpio_write(pin, 0); // Leave LOW
-}
-
-void hal_gpio_debug_pb5(void) {
-    // 3 second pause at start
-    for(volatile u32 d = 0; d < 12000000; d++) {}
-
-    // Pin 1: B5
-    blink_pin(GPIO_PB5, 3);
-    for(volatile u32 d = 0; d < 8000000; d++) {} // 2s pause
-
-    // Pin 2: B7
-    blink_pin(GPIO_PB7, 3);
-    for(volatile u32 d = 0; d < 8000000; d++) {}
-
-    // Pin 3: B1
-    blink_pin(GPIO_PB1, 3);
-    for(volatile u32 d = 0; d < 8000000; d++) {}
-
-    // Pin 4: C1
-    blink_pin(GPIO_PC1, 3);
-    for(volatile u32 d = 0; d < 8000000; d++) {}
-
-    // Pin 5: C2
-    blink_pin(GPIO_PC2, 3);
-    for(volatile u32 d = 0; d < 8000000; d++) {}
-
-    // Pin 6: D7
-    blink_pin(GPIO_PD7, 3);
-    for(volatile u32 d = 0; d < 8000000; d++) {}
-
-    // Pin 7: A2
-    blink_pin(GPIO_PA2, 3);
-    for(volatile u32 d = 0; d < 8000000; d++) {}
-}
 
 void hal_gpio_init(hal_gpio_pin_t gpio_pin, uint8_t is_input,
                    hal_gpio_pull_t pull) {
