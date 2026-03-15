@@ -7,14 +7,12 @@
       ],
       "options": {
         "endpointName": {
-          "1": "switch_1",
-          "2": "switch_2",
-          "3": "switch_3",
-          "4": "switch_4",
-          "5": "relay_1",
-          "6": "relay_2",
-          "7": "relay_3",
-          "8": "relay_4"
+          "1": "switch_left",
+          "2": "switch_middle",
+          "3": "switch_right",
+          "4": "relay_left",
+          "5": "relay_middle",
+          "6": "relay_right"
         }
       }
     },
@@ -87,10 +85,9 @@
         }
       },
       "endpointId": [
+        4,
         5,
-        6,
-        7,
-        8
+        6
       ]
     },
     {
@@ -203,8 +200,7 @@
           "enum": {
             "1": "relay_1",
             "2": "relay_2",
-            "3": "relay_3",
-            "4": "relay_4"
+            "3": "relay_3"
           }
         },
         "longPressDuration": {
@@ -238,8 +234,7 @@
       "endpointId": [
         1,
         2,
-        3,
-        4
+        3
       ]
     },
     {
@@ -285,9 +280,8 @@
         }
       },
       "endpointId": [
-        5,
-        6,
-        7
+        4,
+        5
       ]
     }
   ]
