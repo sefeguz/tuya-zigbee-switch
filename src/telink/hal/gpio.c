@@ -29,11 +29,34 @@ static GPIO_PullTypeDef hal_to_telink_pull(hal_gpio_pull_t pull) {
     }
 }
 
+// Diagnostic: blink PB5 3 times at boot using raw register writes
+void hal_gpio_debug_pb5(void) {
+    unsigned char bit = BIT(5);
+
+    // Force PB5 as GPIO function
+    gpio_set_func(GPIO_PB5, AS_GPIO);
+    // Force output enable
+    reg_gpio_pb_oen &= ~bit;
+    // Disable input via analog register
+    analog_write(0xbd, analog_read(0xbd) & ~bit);
+    // Enable drive strength
+    analog_write(0xbf, analog_read(0xbf) | bit);
+
+    // Blink 3 times
+    for(int i = 0; i < 3; i++) {
+        reg_gpio_pb_out |= bit;   // HIGH = LED off (active-low)
+        for(volatile u32 d = 0; d < 2000000; d++) {}
+        reg_gpio_pb_out &= ~bit;  // LOW = LED on
+        for(volatile u32 d = 0; d < 2000000; d++) {}
+    }
+    reg_gpio_pb_out |= bit; // Leave LED off
+}
+
 void hal_gpio_init(hal_gpio_pin_t gpio_pin, uint8_t is_input,
                    hal_gpio_pull_t pull) {
     GPIO_PinTypeDef telink_pin = (GPIO_PinTypeDef)gpio_pin;
 
-    // Ensure pin is set as GPIO function (not analog)
+    // Ensure pin is in GPIO mode (critical for analog-capable pins like PB5)
     gpio_set_func(telink_pin, AS_GPIO);
 
     if (is_input) {
