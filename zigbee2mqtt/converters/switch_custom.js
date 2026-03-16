@@ -337,6 +337,7 @@ const definitions = [
         model: "TS0003_switch_module_2",
         vendor: "Tuya-custom",
         description: "Custom switch (https://github.com/romasku/tuya-zigbee-switch)",
+        icon: "https://raw.githubusercontent.com/sefeguz/tuya-zigbee-switch/main/docs/.images/TS0003-YBJ.png",
         extend: [
             deviceEndpoints({ endpoints: {"switch_left": 1, "switch_middle": 2, "switch_right": 3, "relay_left": 4, "relay_middle": 5, "relay_right": 6, } }),
             romasku.deviceConfig("device_config", "switch_left"),
