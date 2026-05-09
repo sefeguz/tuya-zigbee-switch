@@ -119,7 +119,7 @@ const romasku = {
         enumLookup({
             name,
             endpointName,
-            lookup: { same: 0, opposite: 1, manual: 2, toggle_on_press: 3 },
+            lookup: { same: 0, opposite: 1, manual: 2 },
             cluster: "genOnOff",
             attribute: { ID: 0xff01, type: 0x30 }, // Enum8
             description: "Mode for the relay indicator LED",
@@ -337,7 +337,6 @@ const definitions = [
         model: "TS0003_switch_module_2",
         vendor: "Tuya-custom",
         description: "Custom switch (https://github.com/romasku/tuya-zigbee-switch)",
-        icon: "https://raw.githubusercontent.com/sefeguz/tuya-zigbee-switch/main/docs/.images/TS0003-YBJ.png",
         extend: [
             deviceEndpoints({ endpoints: {"switch_left": 1, "switch_middle": 2, "switch_right": 3, "relay_left": 4, "relay_middle": 5, "relay_right": 6, } }),
             romasku.deviceConfig("device_config", "switch_left"),
