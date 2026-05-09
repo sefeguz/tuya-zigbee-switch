@@ -122,7 +122,7 @@ const romasku = {
         enumLookup({
             name,
             endpointName,
-            lookup: { same: 0, opposite: 1, manual: 2 },
+            lookup: { same: 0, opposite: 1, manual: 2, toggle_on_press: 3 },
             cluster: "genOnOff",
             attribute: { ID: 0xff01, type: 0x30 }, // Enum8
             description: "Mode for the relay indicator LED",
