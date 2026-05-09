@@ -42,5 +42,6 @@ Support new devices: [contribute/porting.md](/docs/contribute/porting.md)
 | 🚧 | 📦 | 💡 | ⚡️ | 📲 |  🏭  | Zb&nbsp;Manufacturer <br> Zb&nbsp;Model | Name <br> Z2M&nbsp;page&nbsp;🔗 | Store | Threads | Status |
 | -- | -- | -- | -- | -- | :--: | :-------------------------------------- | :------------------------------ | ----: | ------: | :----- |
 | 🟧 | ✔️ | 🇸 | 🔌 | 🛜 | **TL** | `_TZ3000_ybjqjsuz` <br> `TS0003` | [3-gang switch (ybjqjsuz)](https://www.zigbee2mqtt.io/devices/TS0003_switch_module_2.html) |   |   | Pin mapping from firmware dump analysis | 
+| 🟨 | ✔️ | 🇲 | 🔌 | 🛜 | **TL** | `_TZ3000_zbfya6h0` <br> `TS0002` | [Tuya common 2-gang](https://www.zigbee2mqtt.io/devices/TS0002_basic_2.html) |   | [`#032`](https://github.com/romasku/tuya-zigbee-switch/issues/32) | Needs pinout confirmation | 
 
 Data from [`device_db.yaml`](/device_db.yaml)
