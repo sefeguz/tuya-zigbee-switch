@@ -158,7 +158,8 @@ void sync_indicator_led(zigbee_relay_cluster *cluster) {
         return;
     }
 
-    if (cluster->indicator_led_mode != ZCL_ONOFF_INDICATOR_MODE_MANUAL) {
+    if (cluster->indicator_led_mode != ZCL_ONOFF_INDICATOR_MODE_MANUAL &&
+        cluster->indicator_led_mode != ZCL_ONOFF_INDICATOR_MODE_TOGGLE_ON_PRESS) {
         if (cluster->indicator_led_mode == ZCL_ONOFF_INDICATOR_MODE_SAME) {
             cluster->indicator_state = cluster->relay->on;
         } else {
@@ -186,6 +187,18 @@ void relay_cluster_off(zigbee_relay_cluster *cluster) {
 void relay_cluster_toggle(zigbee_relay_cluster *cluster) {
     relay_toggle(cluster->relay);
     sync_indicator_led(cluster);
+}
+
+void relay_cluster_toggle_indicator(zigbee_relay_cluster *cluster) {
+    if (cluster->indicator_led == NULL) {
+        return;
+    }
+    cluster->indicator_state = !cluster->indicator_state;
+    cluster->indicator_state ? led_on(cluster->indicator_led)
+                             : led_off(cluster->indicator_led);
+    hal_zigbee_notify_attribute_changed(cluster->endpoint, ZCL_CLUSTER_ON_OFF,
+                                        ZCL_ATTR_ONOFF_INDICATOR_STATE);
+    relay_cluster_store_attrs_to_nv(cluster);
 }
 
 void relay_cluster_on_relay_change(zigbee_relay_cluster *cluster,

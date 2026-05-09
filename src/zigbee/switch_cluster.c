@@ -281,6 +281,17 @@ void switch_cluster_level_control(zigbee_switch_cluster *cluster) {
 }
 
 void switch_cluster_on_button_press(zigbee_switch_cluster *cluster) {
+    // Toggle indicator on press (independent of relay action) when the
+    // linked relay's indicator mode is TOGGLE_ON_PRESS. Uses persistent
+    // indicator state as a reliable trigger source for HA, even with very
+    // short button presses.
+    zigbee_relay_cluster *linked_relay =
+        &relay_clusters[cluster->relay_index - 1];
+    if (linked_relay->indicator_led_mode ==
+        ZCL_ONOFF_INDICATOR_MODE_TOGGLE_ON_PRESS) {
+        relay_cluster_toggle_indicator(linked_relay);
+    }
+
     if (cluster->mode == ZCL_ONOFF_CONFIGURATION_SWITCH_TYPE_TOGGLE) {
         // Toggle does not support modes (RISE, SHORT, LONG)
         if (cluster->relay_mode != ZCL_ONOFF_CONFIGURATION_RELAY_MODE_DETACHED) {

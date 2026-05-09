@@ -24,6 +24,7 @@ void relay_cluster_add_to_endpoint(zigbee_relay_cluster *cluster,
 void relay_cluster_on(zigbee_relay_cluster *cluster);
 void relay_cluster_off(zigbee_relay_cluster *cluster);
 void relay_cluster_toggle(zigbee_relay_cluster *cluster);
+void relay_cluster_toggle_indicator(zigbee_relay_cluster *cluster);
 
 void relay_cluster_report(zigbee_relay_cluster *cluster);
 
