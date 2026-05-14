@@ -196,6 +196,14 @@ void relay_cluster_toggle_indicator(zigbee_relay_cluster *cluster) {
     cluster->indicator_state = !cluster->indicator_state;
     cluster->indicator_state ? led_on(cluster->indicator_led)
                              : led_off(cluster->indicator_led);
+    // Send unsolicited attribute report so the coordinator (z2m/ZHA/etc) sees
+    // the change immediately even without prior ConfigureReporting setup. This
+    // is the difference between "just notify locally" and "actually push the
+    // new value over the air". Required so toggle_on_press works out-of-box.
+    hal_zigbee_send_report_attr(cluster->endpoint, ZCL_CLUSTER_ON_OFF,
+                                ZCL_ATTR_ONOFF_INDICATOR_STATE,
+                                ZCL_DATA_TYPE_BOOLEAN,
+                                &cluster->indicator_state, 1);
     hal_zigbee_notify_attribute_changed(cluster->endpoint, ZCL_CLUSTER_ON_OFF,
                                         ZCL_ATTR_ONOFF_INDICATOR_STATE);
     relay_cluster_store_attrs_to_nv(cluster);
