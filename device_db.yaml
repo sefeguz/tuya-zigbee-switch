@@ -46,7 +46,8 @@ MODULE_TUYA_COMMON_TS0002:
   mcu: TLSR8258
   config_str: zbfya6h0;TS0002-C;BA0u;LC0;SB4u;RC2;SB5u;RC3;
   alt_config_str: null
-  old_manufacturer_names: null
+  old_manufacturer_names:
+  - ybjqjsuz
   old_zb_models: null
   stock_manufacturer_id: 4417
   stock_image_type: 54179
