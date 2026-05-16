@@ -78,7 +78,7 @@ MODULE_03VS3KS5_TS0004:
   old_manufacturer_names: null
   old_zb_models: null
   stock_manufacturer_id: 4417
-  stock_image_type: 54179
+  stock_image_type: 2050
   firmware_image_type: 47003
   build: yes
   status: in_progress
