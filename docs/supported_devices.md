@@ -43,6 +43,6 @@ Support new devices: [contribute/porting.md](/docs/contribute/porting.md)
 | -- | -- | -- | -- | -- | :--: | :-------------------------------------- | :------------------------------ | ----: | ------: | :----- |
 | 🟧 | ✔️ | 🇸 | 🔌 | 🛜 | **TL** | `_TZ3000_ybjqjsuz` <br> `TS0003` | [3-gang switch (ybjqjsuz)](https://www.zigbee2mqtt.io/devices/TS0003_switch_module_2.html) |   |   | Pin mapping from firmware dump analysis | 
 | 🟨 | ✔️ | 🇲 | 🔌 | 🛜 | **TL** | `_TZ3000_zbfya6h0` <br> `TS0002` | [Tuya common 2-gang](https://www.zigbee2mqtt.io/devices/TS0002_basic_2.html) |   | [`#032`](https://github.com/romasku/tuya-zigbee-switch/issues/32) | Needs pinout confirmation | 
-| 🟧 | ✔️ | 🇸 | 🔌 | 🛜 | **TL** | `_TZ3000_ybjqjsuz` <br> `TS0004` | [4-gang switch (ybjqjsuz)](https://www.zigbee2mqtt.io/devices/TS0004_basic.html) |   |   | 4-gang variant — first 3 channels mirror TS0003-YBJ. Channel 4 (S=B7,R=B5) inferred from leftover 4-endpoint exploration in TeclaBañoNiños device_config_switch_0. Indicator 4 (I=A2) is a guess to be confirmed on first flash. | 
+| 🟧 | ✔️ | 🇸 | 🔌 | 🛜 | **TL** | `_TZ3210_03vs3ks5` <br> `TS0004` | [4-gang switch (Milfra _TZ3210_03vs3ks5)](https://www.zigbee2mqtt.io/devices/TS0004.html) |   |   | 4-gang Milfra variant on Tuya ZTU module — shares 6-button-capable PCB with TUYA_COMMON_TS0002 (2-gang uses B4/B5, this 4-gang uses D3/D7/C0/B6). Pin map traced physically by sefeguz from PCB silkscreen "N02B/04B CTRL V0.2". | 
 
 Data from [`device_db.yaml`](/device_db.yaml)
