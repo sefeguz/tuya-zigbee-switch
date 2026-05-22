@@ -42,6 +42,7 @@ Support new devices: [contribute/porting.md](/docs/contribute/porting.md)
 | 🚧 | 📦 | 💡 | ⚡️ | 📲 |  🏭  | Zb&nbsp;Manufacturer <br> Zb&nbsp;Model | Name <br> Z2M&nbsp;page&nbsp;🔗 | Store | Threads | Status |
 | -- | -- | -- | -- | -- | :--: | :-------------------------------------- | :------------------------------ | ----: | ------: | :----- |
 | 🟧 | ✔️ | 🇸 | 🔌 | 🛜 | **TL** | `_TZ3000_ybjqjsuz` <br> `TS0003` | [3-gang switch (ybjqjsuz)](https://www.zigbee2mqtt.io/devices/TS0003_switch_module_2.html) |   |   | Pin mapping from firmware dump analysis | 
+| 🟧 | ✔️ | 🇸 | 🔌 | 🛜 | **TL** | `_TZ3210_ybjqjsuz` <br> `TS0003` | [3-gang switch (ybjqjsuz TZ3210 variant)](https://www.zigbee2mqtt.io/devices/TS0003_switch_module_2.html) |   |   | Same hardware as MODULE_YBJQJSUZ_TS0003 (_TZ3000_ybjqjsuz) but stock module is from _TZ3210_* family which uses image_type=2050 instead of 54179. Same config_str / pinout. | 
 | 🟨 | ✔️ | 🇲 | 🔌 | 🛜 | **TL** | `_TZ3000_zbfya6h0` <br> `TS0002` | [Tuya common 2-gang](https://www.zigbee2mqtt.io/devices/TS0002_basic_2.html) |   | [`#032`](https://github.com/romasku/tuya-zigbee-switch/issues/32) | Needs pinout confirmation | 
 | 🟧 | ✔️ | 🇸 | 🔌 | 🛜 | **TL** | `_TZ3210_03vs3ks5` <br> `TS0004` | [4-gang switch (Milfra _TZ3210_03vs3ks5)](https://www.zigbee2mqtt.io/devices/TS0004.html) |   |   | 4-gang Milfra variant on Tuya ZTU module — shares 6-button-capable PCB with TUYA_COMMON_TS0002 (2-gang uses B4/B5, this 4-gang uses D3/D7/C0/B6). Pin map traced physically by sefeguz from PCB silkscreen "N02B/04B CTRL V0.2". | 
 
