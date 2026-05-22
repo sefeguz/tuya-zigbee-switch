@@ -29,6 +29,34 @@ MODULE_YBJQJSUZ_TS0003:
   threads: null
   store: null
 
+MODULE_YBJQJSUZ_TS0003_TZ3210:
+  human_name: 3-gang switch (ybjqjsuz TZ3210 variant)
+  category: switch
+  power: mains
+  neutral: required
+  output: relay
+  device_type: router
+  stock_model_name: TS0003
+  stock_manufacturer_name: _TZ3210_ybjqjsuz
+  stock_converter_manufacturer: Tuya
+  stock_converter_model: TS0003_switch_module_2
+  override_z2m_device: null
+  tuya_module: ZTU
+  mcu_family: Telink
+  mcu: TLSR8258
+  config_str: ybjqjsuz;TS0003-YBJ;BB6u;LA0i;SB6u;RB4;IA1i;SC0u;RD2;IC4i;SD3u;RC3;ID4i;
+  alt_config_str: null
+  old_manufacturer_names: null
+  old_zb_models: null
+  stock_manufacturer_id: 4417
+  stock_image_type: 2050
+  firmware_image_type: 47005
+  build: yes
+  status: in_progress
+  info: Same hardware as MODULE_YBJQJSUZ_TS0003 (_TZ3000_ybjqjsuz) but stock module is from _TZ3210_* family which uses image_type=2050 instead of 54179. Same config_str / pinout.
+  threads: null
+  store: null
+
 MODULE_TUYA_COMMON_TS0002:
   human_name: Tuya common 2-gang
   category: module
