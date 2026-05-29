@@ -129,7 +129,7 @@ MODULE_GSQXCWQR_TS0001:
   tuya_module: ZTU
   mcu_family: Telink
   mcu: TLSR8258
-  config_str: gsqxcwqr;TS0001-MIL;BC0u;LA0i;SC0u;RD2;IC4i;
+  config_str: gsqxcwqr;TS0001-MIL;BC0u;LA0i;SC0u;RB4;IC4i;
   alt_config_str: null
   old_manufacturer_names: null
   old_zb_models: null
@@ -137,8 +137,8 @@ MODULE_GSQXCWQR_TS0001:
   stock_image_type: 54179
   firmware_image_type: 43576
   build: yes
-  status: in_progress
-  info: 1-gang Milfra on Tuya ZTU module (shares 6-button PCB with MODULE_YBJQJSUZ_TS0003 3-gang). GUESS to verify with hardware - single button assumed to be the middle channel of the 3-gang (C0), master set to same pin C0. Pinout S=C0 R=D2 I=C4i (= 3-gang ch2). If button/relay does not respond, likely alternative is ch1 (B6/B4/A1).
+  status: mostly_supported
+  info: 1-gang Milfra on Tuya ZTU module (shares 6-button PCB with MODULE_YBJQJSUZ_TS0003 3-gang). Pinout VERIFIED physically on hardware 2026-05-29 - single button is the middle channel (C0, also master), relay B4, indicator C4. Note relay is B4 (not the 3-gang ch2 relay D2 nor 4-gang C3). config_str S=C0 R=B4 I=C4i.
   threads: null
   store: null
 
