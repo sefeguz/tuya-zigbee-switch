@@ -114,6 +114,34 @@ MODULE_MRIGI9IJ_TS0002:
   threads: null
   store: null
 
+MODULE_GSQXCWQR_TS0001:
+  human_name: 1-gang switch (Milfra _TZ3000_gsqxcwqr)
+  category: switch
+  power: mains
+  neutral: required
+  output: relay
+  device_type: router
+  stock_model_name: TS0001
+  stock_manufacturer_name: _TZ3000_gsqxcwqr
+  stock_converter_manufacturer: Tuya
+  stock_converter_model: TS0001_basic
+  override_z2m_device: TS0001_basic_1
+  tuya_module: ZTU
+  mcu_family: Telink
+  mcu: TLSR8258
+  config_str: gsqxcwqr;TS0001-MIL;BC0u;LA0i;SC0u;RD2;IC4i;
+  alt_config_str: null
+  old_manufacturer_names: null
+  old_zb_models: null
+  stock_manufacturer_id: 4417
+  stock_image_type: 54179
+  firmware_image_type: 43576
+  build: yes
+  status: in_progress
+  info: 1-gang Milfra on Tuya ZTU module (shares 6-button PCB with MODULE_YBJQJSUZ_TS0003 3-gang). GUESS to verify with hardware - single button assumed to be the middle channel of the 3-gang (C0), master set to same pin C0. Pinout S=C0 R=D2 I=C4i (= 3-gang ch2). If button/relay does not respond, likely alternative is ch1 (B6/B4/A1).
+  threads: null
+  store: null
+
 MODULE_03VS3KS5_TS0004:
   human_name: 4-gang switch (Milfra _TZ3210_03vs3ks5)
   category: switch
