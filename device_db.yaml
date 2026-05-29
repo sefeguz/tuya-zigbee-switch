@@ -86,6 +86,34 @@ MODULE_TUYA_COMMON_TS0002:
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/32
   store: null
 
+MODULE_TUYA_COMMON_TS0002_TZ3210:
+  human_name: Tuya common 2-gang (TZ3210 _TZ3210_mrigi9ij variant)
+  category: module
+  power: mains
+  neutral: required
+  output: relay
+  device_type: router
+  stock_model_name: TS0002
+  stock_manufacturer_name: _TZ3210_mrigi9ij
+  stock_converter_manufacturer: Tuya
+  stock_converter_model: TS0002_basic
+  override_z2m_device: TS0002_basic_2
+  tuya_module: ZT3L
+  mcu_family: Telink
+  mcu: TLSR8258
+  config_str: zbfya6h0;TS0002-C;BA0u;LC0;SB4u;RC2;SB5u;RC3;
+  alt_config_str: null
+  old_manufacturer_names: null
+  old_zb_models: null
+  stock_manufacturer_id: 4417
+  stock_image_type: 2050
+  firmware_image_type: 43575
+  build: yes
+  status: mostly_supported
+  info: Same hardware/pinout as MODULE_TUYA_COMMON_TS0002 (_TZ3000_zbfya6h0) but stock module is from _TZ3210_* family which uses image_type=2050 instead of 54179. Same config_str → post-flash reports zbfya6h0/TS0002-C and uses TS0002_basic_2 converter, identical to the 2-gang.
+  threads: null
+  store: null
+
 MODULE_03VS3KS5_TS0004:
   human_name: 4-gang switch (Milfra _TZ3210_03vs3ks5)
   category: switch
