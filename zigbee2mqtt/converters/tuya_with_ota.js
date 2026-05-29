@@ -28,6 +28,7 @@ const definitions = [];
 
 const tuyaModels = [
     "TS0001",
+    "TS0001_basic",
     "TS0002",
     "TS0002_basic",
     "TS0003",

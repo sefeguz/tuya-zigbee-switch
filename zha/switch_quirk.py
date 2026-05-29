@@ -236,6 +236,7 @@ CONFIGS = [
     "zbfya6h0;TS0002-C;BA0u;LC0;SB4u;RC2;SB5u;RC3;",
     "ybjqjsuz;TS0002-C;BA0u;LC0;SB4u;RC2;SB5u;RC3;",
     "ybjqjsuz;TS0002-YBJ;BB6u;LA0i;SB6u;RB4;IA1i;SD3u;RD2;ID4i;",
+    "gsqxcwqr;TS0001-MIL;BC0u;LA0i;SC0u;RD2;IC4i;",
     "03vs3ks5;TS0004-MIL;BB6u;LA0i;SB6u;RC2;IA1i;SC0u;RC3;IC4i;SD7u;RD2;IC1i;SD3u;RB4;ID4i;",
 ]
 
